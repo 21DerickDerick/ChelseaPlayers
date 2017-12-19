@@ -74,7 +74,7 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-SX-zbE">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-SX-zbE">
                                             <rect key="frame" x="345" y="28" width="22" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="22" id="H2o-Up-Cbu"/>
@@ -286,6 +286,31 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="6k4-sF-1Cz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mVL-J4-gWB">
+                                        <rect key="frame" x="0.0" y="448" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mVL-J4-gWB" id="XD5-JC-wMo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB2-Lw-IxF">
+                                                    <rect key="frame" x="130.5" y="6" width="114" height="30"/>
+                                                    <state key="normal" title="Mark As Favorite"/>
+                                                    <connections>
+                                                        <action selector="markAsFavorite:" destination="iVM-J2-Ekw" eventType="touchUpInside" id="gmt-3g-kK7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VB2-Lw-IxF" firstAttribute="centerX" secondItem="XD5-JC-wMo" secondAttribute="centerX" id="JHW-oN-0as"/>
+                                                <constraint firstItem="VB2-Lw-IxF" firstAttribute="centerY" secondItem="XD5-JC-wMo" secondAttribute="centerY" id="gR0-y8-KZ1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="iVM-J2-Ekw" id="05a-Ma-U5V"/>
@@ -307,9 +332,6 @@
             <point key="canvasLocation" x="752.79999999999995" y="126.38680659670166"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Star" width="514" height="490"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>

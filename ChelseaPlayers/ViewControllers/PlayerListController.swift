@@ -91,8 +91,53 @@ class PlayerListController: UITableViewController {
                 guard let navigationController = segue.destination as? UINavigationController, let playerDetailController = navigationController.topViewController as? PlayerDetailController else { return }
                 
                 playerDetailController.player = player
+                playerDetailController.delegate = self
             }
         }
     }
     
 }
+
+extension Player: Equatable {
+    static func ==(lhs: Player, rhs: Player) -> Bool {
+        return lhs.firstName == rhs.firstName && lhs.lastName == rhs.lastName && lhs.nationality == rhs.nationality && lhs.age == rhs.age && lhs.role == rhs.role && lhs.image == rhs.image
+    }
+}
+
+extension PlayerListController: PlayerDetailControllerDelegate {
+    func markAsFavoritePlayer(_ player: Player) {
+        var outerIndex: Int? = nil
+        var innerIndex: Int? = nil
+        
+        for (index, players) in sectionedPlayers.enumerated() {
+            if let indexOfPlayer = players.index(of: player) {
+                outerIndex = index
+                innerIndex = indexOfPlayer
+                break
+            }
+        }
+        
+        if let outerIndex = outerIndex, let innerIndex = innerIndex {
+            var favoriteContact = sectionedPlayers[outerIndex][innerIndex]
+            favoriteContact.isFavorite = true
+            sectionedPlayers[outerIndex][innerIndex] = favoriteContact
+            tableView.reloadData()
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
