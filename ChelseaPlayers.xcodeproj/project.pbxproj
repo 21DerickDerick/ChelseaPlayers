@@ -17,6 +17,7 @@
 		0A4C33421FE8AD5A001D489C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33411FE8AD5A001D489C /* Player.swift */; };
 		0A4C33451FE8B700001D489C /* PlayerListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33441FE8B700001D489C /* PlayerListController.swift */; };
 		0A4C33471FE8B907001D489C /* PlayerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33461FE8B907001D489C /* PlayerDetailController.swift */; };
+		0A4C33491FE8FAB5001D489C /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33481FE8FAB5001D489C /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0A4C33411FE8AD5A001D489C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0A4C33441FE8B700001D489C /* PlayerListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListController.swift; sourceTree = "<group>"; };
 		0A4C33461FE8B907001D489C /* PlayerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailController.swift; sourceTree = "<group>"; };
+		0A4C33481FE8FAB5001D489C /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4C333C1FE8AA99001D489C /* PlistLoader.swift */,
+				0A4C33481FE8FAB5001D489C /* PlayerCell.swift */,
 				0A4C33431FE8B6DC001D489C /* ViewControllers */,
 				0A4C33401FE8AD48001D489C /* Model */,
 				0A4C33241FE8A210001D489C /* AppDelegate.swift */,
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4C33491FE8FAB5001D489C /* PlayerCell.swift in Sources */,
 				0A4C33251FE8A210001D489C /* AppDelegate.swift in Sources */,
 				0A4C33421FE8AD5A001D489C /* Player.swift in Sources */,
 				0A4C33471FE8B907001D489C /* PlayerDetailController.swift in Sources */,

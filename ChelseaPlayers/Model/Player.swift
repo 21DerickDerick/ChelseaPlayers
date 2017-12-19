@@ -17,7 +17,7 @@ struct Player {
     let role: String
     let number: String
     let image: UIImage?
-    var favorite: Bool
+    var isFavorite: Bool
 }
 
 extension Player {
@@ -53,6 +53,6 @@ extension Player {
             image = nil
         }
         
-        favorite = false
+        isFavorite = false
     }
 }
