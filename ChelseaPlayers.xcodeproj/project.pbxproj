@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0A4C33251FE8A210001D489C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33241FE8A210001D489C /* AppDelegate.swift */; };
-		0A4C33271FE8A210001D489C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33261FE8A210001D489C /* MasterViewController.swift */; };
-		0A4C33291FE8A210001D489C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33281FE8A210001D489C /* DetailViewController.swift */; };
 		0A4C332C1FE8A210001D489C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C332A1FE8A210001D489C /* Main.storyboard */; };
 		0A4C332E1FE8A210001D489C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C332D1FE8A210001D489C /* Assets.xcassets */; };
 		0A4C33311FE8A210001D489C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C332F1FE8A210001D489C /* LaunchScreen.storyboard */; };
+		0A4C33391FE8A237001D489C /* ContactsDB (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C33381FE8A237001D489C /* ContactsDB (1).plist */; };
+		0A4C333B1FE8A33C001D489C /* PlayersDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C333A1FE8A33C001D489C /* PlayersDB.plist */; };
+		0A4C333D1FE8AA99001D489C /* PlistLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C333C1FE8AA99001D489C /* PlistLoader.swift */; };
+		0A4C33421FE8AD5A001D489C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33411FE8AD5A001D489C /* Player.swift */; };
+		0A4C33451FE8B700001D489C /* PlayerListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33441FE8B700001D489C /* PlayerListController.swift */; };
+		0A4C33471FE8B907001D489C /* PlayerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C33461FE8B907001D489C /* PlayerDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A4C33211FE8A210001D489C /* ChelseaPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChelseaPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4C33241FE8A210001D489C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A4C33261FE8A210001D489C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		0A4C33281FE8A210001D489C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0A4C332B1FE8A210001D489C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A4C332D1FE8A210001D489C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A4C33301FE8A210001D489C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4C33321FE8A210001D489C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4C33381FE8A237001D489C /* ContactsDB (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ContactsDB (1).plist"; sourceTree = "<group>"; };
+		0A4C333A1FE8A33C001D489C /* PlayersDB.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlayersDB.plist; sourceTree = "<group>"; };
+		0A4C333C1FE8AA99001D489C /* PlistLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistLoader.swift; sourceTree = "<group>"; };
+		0A4C33411FE8AD5A001D489C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0A4C33441FE8B700001D489C /* PlayerListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListController.swift; sourceTree = "<group>"; };
+		0A4C33461FE8B907001D489C /* PlayerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		0A4C33231FE8A210001D489C /* ChelseaPlayers */ = {
 			isa = PBXGroup;
 			children = (
+				0A4C333C1FE8AA99001D489C /* PlistLoader.swift */,
+				0A4C33431FE8B6DC001D489C /* ViewControllers */,
+				0A4C33401FE8AD48001D489C /* Model */,
 				0A4C33241FE8A210001D489C /* AppDelegate.swift */,
-				0A4C33261FE8A210001D489C /* MasterViewController.swift */,
-				0A4C33281FE8A210001D489C /* DetailViewController.swift */,
 				0A4C332A1FE8A210001D489C /* Main.storyboard */,
 				0A4C332D1FE8A210001D489C /* Assets.xcassets */,
 				0A4C332F1FE8A210001D489C /* LaunchScreen.storyboard */,
+				0A4C33381FE8A237001D489C /* ContactsDB (1).plist */,
+				0A4C333A1FE8A33C001D489C /* PlayersDB.plist */,
 				0A4C33321FE8A210001D489C /* Info.plist */,
 			);
 			path = ChelseaPlayers;
+			sourceTree = "<group>";
+		};
+		0A4C33401FE8AD48001D489C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A4C33411FE8AD5A001D489C /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A4C33431FE8B6DC001D489C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A4C33441FE8B700001D489C /* PlayerListController.swift */,
+				0A4C33461FE8B907001D489C /* PlayerDetailController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4C33311FE8A210001D489C /* LaunchScreen.storyboard in Resources */,
+				0A4C33391FE8A237001D489C /* ContactsDB (1).plist in Resources */,
+				0A4C333B1FE8A33C001D489C /* PlayersDB.plist in Resources */,
 				0A4C332E1FE8A210001D489C /* Assets.xcassets in Resources */,
 				0A4C332C1FE8A210001D489C /* Main.storyboard in Resources */,
 			);
@@ -139,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4C33291FE8A210001D489C /* DetailViewController.swift in Sources */,
-				0A4C33271FE8A210001D489C /* MasterViewController.swift in Sources */,
 				0A4C33251FE8A210001D489C /* AppDelegate.swift in Sources */,
+				0A4C33421FE8AD5A001D489C /* Player.swift in Sources */,
+				0A4C33471FE8B907001D489C /* PlayerDetailController.swift in Sources */,
+				0A4C33451FE8B700001D489C /* PlayerListController.swift in Sources */,
+				0A4C333D1FE8AA99001D489C /* PlistLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
